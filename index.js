@@ -70,6 +70,7 @@ function main() {
 
 	const bodyGeometry = new THREE.BoxGeometry( carWidth, carHeight, carLength );
 	const bodyMaterial = new THREE.MeshPhongMaterial( { color: 0x6688AA } );
+	bodyMaterial.shininess = 150;
 	const bodyMesh = new THREE.Mesh( bodyGeometry, bodyMaterial );
 	bodyMesh.position.y = 1.4;
 	bodyMesh.castShadow = true;
