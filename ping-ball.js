@@ -24,6 +24,8 @@ function main() {
 
 	const scene = new THREE.Scene();
 	scene.background = new THREE.Color( 'white' );
+    // scene.fog = new THREE.Fog(0xFFFFFF, 5, 40);
+    scene.fog = new THREE.FogExp2(0xFFFFFF, 0.05);
 
 	const loader = new THREE.TextureLoader();
 
