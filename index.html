@@ -1,0 +1,33 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <title>Three.js - Fundamentals</title>
+        <style type="text/css">
+            html, body {
+                margin: 0;
+                height: 100%;
+            }
+            #c {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+
+        </style>
+    </head>
+    <body>
+        <canvas id="c"></canvas>
+        <div id="info"></div>
+    <script type="importmap">{
+        "imports": {
+            "three": "https://threejs.org/build/three.module.js",
+            "three/addons/": "https://threejs.org/examples/jsm/"
+        }
+    }</script>
+    </body>
+
+    <script type="module" src="ping-ball.js"></script>
+
+    </html>
