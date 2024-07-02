@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Three.js - Fundamentals</title>
     <style type="text/css">
+
+        :root {
+          --dark-bg: rgba(15, 15, 15, 0.95);
+          --spacing: 350px;
+        
+          font-family: brandon-grotesque, sans-serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+        
         html, body {
             height: 100%;
             margin: 0;
@@ -13,6 +23,21 @@
             width: 100%;
             height: 100%;
             display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        main {
+        width: 100vw;
+        color: white;
+        z-index: 99;
+        position: absolute;
+        width: 90%;
+        margin: 0px auto;
+        padding: 120px 5%;
+        
+        display: grid;
+        /* grid-template-columns: repeat(12, 1fr); */
         }
 
     </style>
@@ -20,10 +45,137 @@
 <body>
     <canvas id="c"></canvas>
     <div id="info"></div>
+    <main>
+        <section>
+            <h2>📜 Manifesto</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </section>
+        <section>
+            <h2>📜 Manifesto</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </section>
+        <section>
+            <h2>📜 Manifesto</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </section>
+        <section>
+            <h2>📜 Manifesto</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </section>
+        <section>
+            <h2>📜 Manifesto</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </section>
+        <section>
+            <h2>📜 Manifesto</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </section>
+        <section>
+            <h2>📜 Manifesto</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </section>
+        <section>
+            <h2>📜 Manifesto</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </section>
+        <section>
+            <h2>📜 Manifesto</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </section>
+    </main>
 <script type="importmap">{
     "imports": {
-        "three": "./three.module.js",
-        "three/addons/": "https://threejs.org/examples/jsm/"
+        "three": "./three.module.js"
     }
 }</script>
 </body>
@@ -33,7 +185,7 @@
     // from https://threejs.org/manual/examples/shadows-fake.html
 
     import * as THREE from 'three';
-    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    // import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
     function main() {
 
@@ -46,12 +198,13 @@
         const far = 100;
         const camera = new THREE.PerspectiveCamera( fov, aspect, near, far );
         camera.position.z = 5;
+        camera.lookAt( 0, 0, 0 );
 
         const scene = new THREE.Scene();
   
-        const controls = new OrbitControls( camera, canvas );
-        controls.target.set( 0, 0, 0 );
-        controls.update();
+        // const controls = new OrbitControls( camera, canvas );
+        // controls.target.set( 0, 0, 0 );
+        // controls.update();
 
         function addLight(...pos) {
             const color = 0xFFFFFF;
@@ -124,27 +277,27 @@
 
         }
 
-            const segmentsAround = 124; // 24
-            const segmentsDown = 116; // 16
-            const { positions, indices } = makeSpherePositions( segmentsAround, segmentsDown );
+        const segmentsAround = 24; // 24
+        const segmentsDown = 16; // 16
+        const { positions, indices } = makeSpherePositions( segmentsAround, segmentsDown );
 
-            const normals = positions.slice();
+        const normals = positions.slice();
 
-            const geometry = new THREE.BufferGeometry();
-            const positionNumComponents = 3;
-            const normalNumComponents = 3;
+        const geometry = new THREE.BufferGeometry();
+        const positionNumComponents = 3;
+        const normalNumComponents = 3;
 
-            const positionAttribute = new THREE.BufferAttribute( positions, positionNumComponents );
-            positionAttribute.setUsage( THREE.DynamicDrawUsage );
-            geometry.setAttribute(
+        const positionAttribute = new THREE.BufferAttribute( positions, positionNumComponents );
+        positionAttribute.setUsage( THREE.DynamicDrawUsage );
+        geometry.setAttribute(
             'position',
             positionAttribute );
-            geometry.setAttribute(
+        geometry.setAttribute(
             'normal',
             new THREE.BufferAttribute( normals, normalNumComponents ) );
-            geometry.setIndex( indices );
+        geometry.setIndex( indices );
 
-            function makeInstance( geometry, color, x ) {
+        function makeInstance( geometry, color, x ) {
 
             const material = new THREE.MeshPhongMaterial( {
                 color,
@@ -158,13 +311,13 @@
             cube.position.x = x;
             return cube;
 
-            }
+        }
 
-            const cubes = [
+        const cubes = [
             makeInstance( geometry, 0xFF0000, 0 ),
-            ];
+        ];
 
-            function resizeRendererToDisplaySize( renderer ) {
+        function resizeRendererToDisplaySize( renderer ) {
 
             const canvas = renderer.domElement;
             const width = canvas.clientWidth;
@@ -178,11 +331,11 @@
 
             return needResize;
 
-            }
+        }
 
-            const temp = new THREE.Vector3();
+        const temp = new THREE.Vector3();
 
-            function render( time ) {
+        function render( time ) {
 
             time *= 0.001;
 
@@ -194,18 +347,18 @@
 
             }
 
-            for ( let i = 0; i < positions.length; i += 3 ) {
+            // for ( let i = 0; i < positions.length; i += 3 ) {
 
-                const quad = ( i / 12 | 0 );
-                const ringId = quad / segmentsAround | 0;
-                const ringQuadId = quad % segmentsAround;
-                const ringU = ringQuadId / segmentsAround;
-                const angle = ringU * Math.PI * 2;
-                temp.fromArray( normals, i );
-                temp.multiplyScalar( THREE.MathUtils.lerp( 1, 1.4, Math.sin( time + ringId + angle ) * .5 + .5 ) );
-                temp.toArray( positions, i );
+            //     const quad = ( i / 12 | 0 );
+            //     const ringId = quad / segmentsAround | 0;
+            //     const ringQuadId = quad % segmentsAround;
+            //     const ringU = ringQuadId / segmentsAround;
+            //     const angle = ringU * Math.PI * 2;
+            //     temp.fromArray( normals, i );
+            //     temp.multiplyScalar( THREE.MathUtils.lerp( 1, 1.4, Math.sin( 0 + ringId + angle ) * .5 + .5 ) );
+            //     temp.toArray( positions, i );
 
-            }
+            // }
 
             positionAttribute.needsUpdate = true;
 
@@ -221,12 +374,36 @@
 
             requestAnimationFrame( render );
 
-            }
-
-            requestAnimationFrame( render );
         }
 
-        main();
+        requestAnimationFrame( render );
+
+        function scrollAnimation() {
+            const t = document.body.getBoundingClientRect().top;
+
+            camera.rotation.z = t * .003;
+            // camera.lookAt(0, 0, 0);
+
+            for ( let i = 0; i < positions.length; i += 3 ) {
+
+                const quad = ( i / 12 | 0 );
+                const ringId = quad / segmentsAround | 0;
+                const ringQuadId = quad % segmentsAround;
+                const ringU = ringQuadId / segmentsAround;
+                const angle = ringU * Math.PI * 2;
+                temp.fromArray( normals, i );
+                temp.multiplyScalar( THREE.MathUtils.lerp( 1, 1.4, Math.sin( t * .01 + ringId + angle ) * .5 + .5 ) );
+                temp.toArray( positions, i );
+
+            }
+        }
+
+        document.body.onscroll = scrollAnimation;
+        scrollAnimation();
+
+    }
+
+    main();
 </script>
 
 </html>
